@@ -62,7 +62,26 @@ document.addEventListener('DOMContentLoaded', function() {
   // Show default service content (Web Development)
   showService('service1');
 });
+function showGetQuote() {
+  const getQuoteSection = document.getElementById('get-quote');
+  const ourWorkSection = document.getElementById('our-work');
 
+  if (getQuoteSection && ourWorkSection) {
+      getQuoteSection.classList.remove('d-none');
+      ourWorkSection.classList.add('d-none');
+  }
+}
+
+
+function showOurWork() {
+  const getQuoteSection = document.getElementById('get-quote');
+  const ourWorkSection = document.getElementById('our-work');
+
+  if (getQuoteSection && ourWorkSection) {
+      ourWorkSection.classList.remove('d-none');
+      getQuoteSection.classList.add('d-none');
+  }
+}
 // Typing effect code
 const items = [
   'Innovate.',
